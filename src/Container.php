@@ -6,7 +6,7 @@ use Illuminate\Container\Container as IlluminateContainer;
 use Psr\Container\ContainerInterface;
 use ReflectionClass;
 
-class Container extends IlluminateContainer implements ContainerInterface {
+final class Container extends IlluminateContainer implements ContainerInterface {
 
 	/**
 	 * @inheritDoc
@@ -32,7 +32,7 @@ class Container extends IlluminateContainer implements ContainerInterface {
 			return IlluminateContainer::getInstance();
 		}
 
-		if (is_null(static::$instance)) {
+		if (is_null(self::$instance)) { // @phpstan-ignore-line
 			static::$instance = new static();
 		}
 
