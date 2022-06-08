@@ -1,10 +1,7 @@
 {
-    "name": "illuminate/psr-container",
+    "name": "like/psr-container",
     "type": "library",
     "description": "Implements the PSR-11 interface using `illuminate/container`.",
-    "repositories": [
-        {"type": "composer", "url": "https://composer.likesistemas.com.br/"}
-    ],
     "require": {
         "php": ">=5.6",
         "illuminate/container": "^5.0 || ^8.0 || ^9.0",
