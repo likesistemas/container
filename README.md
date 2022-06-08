@@ -1,15 +1,15 @@
-# [Nome da Biblioteca] Descrição da biblioteca [![CI](https://github.com/likesistemas/composer-empty/actions/workflows/ci.yml/badge.svg)](https://github.com/likesistemas/composer-empty/actions/workflows/ci.yml)
+# [illuminate/psr-container] Implements the PSR-11 interface using `illuminate/container`. [![CI](https://github.com/likesistemas/container/actions/workflows/ci.yml/badge.svg)](https://github.com/likesistemas/container/actions/workflows/ci.yml)
 
-## Instalação
+## Installation
 
 ```
-composer require likesistemas/nomedalib
+composer require illuminate/psr-container
 ```
 
-## Como usar?
-
-Descrição de como usar.
+## How to use?
 
 ```yml
-$intancia = new NomeDaLib();
+use Illuminate\Container\Psr11\Container;
+
+$container = Container::getInstance();
 ```
