@@ -25,7 +25,7 @@ final class Container extends IlluminateContainer implements ContainerInterface 
 	/**
 	 * Checks if the included version implements the interface, if it does not return an implemented instance.
 	 *
-	 * @return ContainerInterface
+	 * @return IlluminateContainer|ContainerInterface
 	 */
 	public static function getInstance() {
 		if (self::isPsr11()) {
