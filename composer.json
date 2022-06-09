@@ -32,5 +32,8 @@
         "fix:ci": "php-cs-fixer fix --dry-run --stop-on-violation",
         "test": "phpunit",
         "analyse": "phpstan analyse"
+    },
+    "provide": {
+        "psr/container-implementation": "=1.0"
     }
 }
